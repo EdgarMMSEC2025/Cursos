@@ -1,0 +1,362 @@
+ /* Estilos generales */
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body,div,ul,li,a,h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+
+
+ body {
+    font-family: Montserrat;
+    --bg-color: #0001fb;
+    --text-color: #000;
+    --dark-color: #2320e9;
+    --complementar: #fbfa00;
+    --bg: #03A0BF;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    width: auto;
+    background: linear-gradient(180deg, #04d3fb 10%, var(--bg) 90%);
+}
+
+.wrapper{
+    height: inherit;
+}
+
+/* Encabezado del curso */
+header {
+    background: linear-gradient(170deg, var(--bg-color) 24%, #04d3fb 100%);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: inherit;
+    gap: 250px;
+}
+
+.header__container-item {
+    
+}
+
+.header__container-item h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header__container-item p {
+    margin-top: 10px;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.header-logo{
+    
+    width: 70%;
+    margin: 0;
+    margin-bottom: 20px;
+    /*border: 2px solid #fff;*/
+    filter: drop-shadow(.5px .5px 0 var(--text-color)) 
+          drop-shadow(-.5px -.5px 0 var(--text-color));
+}
+
+
+.resaltar{
+    color: #f9f9f9;
+    font-weight: 800;
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 2px #fff, 0 0 3px var(--bg-color);
+    }
+    to {
+      text-shadow: 0 0 6px #fff, 0 0 3px var(--text-color);
+    }
+  }
+/* Menú de navegación */
+.menu {
+    background-color: color-mix(in srgb, var(--complementar) 95%, #0af 5%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu__container {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu__container-item {
+    width: 210px;
+    margin: 0 15px;
+    font-weight: 600;
+    color: var(--text-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    transition: background-color .5s, color .8s;
+}
+
+.active {/*.menu__container-item*/
+    background-color: var(--dark-color);
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Estilos de las secciones */
+
+section{
+    display: none;
+}
+
+.seccion{
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 80dvw;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+section:first-of-type {
+    display: block;
+  }
+
+
+
+.seccion__list{
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.seccion__list-item{
+    list-style: lower-roman;
+}
+.seccion li{
+    text-align: justify;
+    margin: 18px;
+    font-size: medium;
+}
+
+.seccion h2 {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--bg-color);
+    font-size: 2rem;
+}
+.seccion h3{    
+    text-align: center;
+    color: var(--bg);
+    font-size: 1.5rem;
+
+}
+
+section h4{
+    color: var(--dark-color);
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.seccion span{
+    font-weight: 700;
+}
+
+.seccion a{
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s;
+}
+
+.seccion a:hover{
+    color: var(--dark-color);
+}
+
+.seccion__flex{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
+}
+
+.proyecto{
+    text-align: center;
+
+}
+.cronograma{
+    margin-top: 20px;
+}
+
+.objetivos {
+    text-align: center;
+}
+
+.objetivos p{
+    text-align: justify;
+}
+.seccion__flex-item, .cronograma-item{
+    display: flex;
+    
+    
+}
+
+.modalidad{
+    flex-direction: row-reverse;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    border-radius: 40px;
+}
+
+.cronograma-item{
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.cronograma-item p{
+    margin: 10px;
+}
+
+.over{
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .img-container{
+    text-align: center;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+.seccion__flex-item-img:first-child{
+    width: 30%;
+    border-radius: 40px;
+    
+}
+.seccion__flex-item-img{
+    width: 50%;
+    border-radius: 40px;
+    transition: box-shadow .35s;
+}
+
+.seccion__flex-item img:hover{
+    box-shadow: 0px 0px 15px 0px var(--dark-color);
+}
+
+.general{
+    background-attachment: fixed;
+    border-radius: 40px;
+    font-size:  xx-large;
+    font-weight: bold;
+    filter: drop-shadow();
+    margin-top: 25px;
+}
+.general:nth-of-type(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), #0008),url("../media/industria.jpg");
+    background-size: contain;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+}
+.general:nth-of-type(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), #0008),url("../media/industria2.jpg");
+    background-size: cover;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+}
+.general:nth-of-type(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), #0008),url("../media/industria3.jpg");
+    background-size: contain;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    
+}
+
+.general p{
+    margin: auto;
+}
+.objetivo {
+    border-radius: 40px;
+    width: 30%;
+    
+}
+
+.seccion p {
+    
+    line-height: 1.6;
+    font-size: larger;
+}
+
+.seccion-img{
+    border-radius: 40px;
+    width: 10%;
+    margin: 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px #0004;
+    
+}
+
+
+/* Pie de página */
+footer {
+    background-color: var(--bg-color);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    text-align: center;
+    padding:  20px;
+    
+    
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
