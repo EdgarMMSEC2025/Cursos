@@ -14,16 +14,18 @@ body,div,ul,li,a,h1,h2,h3,h4{
 
  body {
     font-family: Montserrat;
-    --bg-color: #0001fb;
-    --text-color: #000;
-    --dark-color: #2320e9;
-    --complementar: #fbfa00;
-    --bg: #03A0BF;
+    --base-color: #4180ab;
+    --text-color: #ffff;
+    --dark-color: #8ab3cf;
+    --complementar: #BDD1DE;
+    --bg: #E4EBF0;
     margin: 0;
     padding: 0;
     color: #333;
     width: auto;
-    background: linear-gradient(180deg, #04d3fb 10%, var(--bg) 90%);
+    background: url("../media/abstract-lines.png"), var(--bg) 100%;
+    
+    background-size: auto;
 }
 
 .wrapper{
@@ -32,7 +34,7 @@ body,div,ul,li,a,h1,h2,h3,h4{
 
 /* Encabezado del curso */
 header {
-    background: linear-gradient(170deg, var(--bg-color) 24%, #04d3fb 100%);
+    background: linear-gradient(170deg, var(--base-color) 24%, var(--dark-color) 100%);
     color: #fff;
     text-align: center;
     padding: 50px 20px;
@@ -112,7 +114,7 @@ header {
     width: 210px;
     margin: 0 15px;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--base-color);
     border-radius: 5px;
     text-align: center;
     padding: 10px;
@@ -126,7 +128,7 @@ header {
     color: #fff;
 }
 
-/* Estilos de las secciones */
+/* Estilos de las secciones generales */
 
 section{
     display: none;
@@ -136,7 +138,7 @@ section{
     padding: 60px 20px;
     margin: 20px auto;
     max-width: 80dvw;
-    background-color: #f9f9f9;
+    background-color: var(--complementar);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -180,7 +182,11 @@ section h4{
     text-align: center;
     margin: 20px 0 20px 0;
 }
-
+.seccion p {
+    margin: 30px;
+    line-height: 1.6;
+    font-size: larger;
+}
 .seccion span{
     font-weight: 700;
 }
@@ -202,10 +208,141 @@ section h4{
 
 }
 
+
+/* Estilos de las secciones generales fin */
+
+/* Estilos de las secciones especificas */
+.proyectos p{
+    margin: 30px 250px 30px 250px;
+}
+
+.proyectos h2{
+    font-size: 3rem;
+}
+
+.proyectos h3{
+    font-size: 2rem;
+    background-color: var(--base-color);
+    margin: 25px;
+}
+
+.proyectos h4{
+    font-size: 1.5rem;
+    color: var(--base-color);
+    margin-bottom: 40px;
+}
+
 .proyecto{
     text-align: center;
-
+    align-items: center;
 }
+
+
+.proyecto__p{
+    text-align: justify;
+}
+.proyecto__img{
+    display: flex;
+    background-attachment: fixed;
+    border-radius: 40px;
+    font-size:  large;
+    font-weight: bold;
+    filter: drop-shadow();
+    margin-top: 250px;
+}
+
+.proyecto__img p{
+    margin: auto;
+}
+.proyecto__img:nth-of-type(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_1_1.jpg");
+    background-size: 30%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_2_1.jpg");
+    background-size: 100%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_3_1.jpg");
+    background-size: 100%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(4){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_4_1.jpg");
+    background-size: 50%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(5){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_5_1.jpg");
+    background-size: 50%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(6){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_6_1.jpg");
+    background-size: 50%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.proyecto__img:nth-of-type(7){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), #0008), url("../media/p_7_1.jpg");
+    background-size: 50%;
+    background-position: center;
+    width: 33%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.egresados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.egresados img{
+    margin: auto;
+    border-radius: 30px;
+    
+}
+
 .cronograma{
     margin-top: 20px;
 }
@@ -216,6 +353,12 @@ section h4{
 
 .objetivos p{
     text-align: justify;
+    margin: 0 100px 0 100px;
+}
+
+.seccion li{
+    margin: 0 100px 20px 100px;
+    font-size: 1.2rem;
 }
 .seccion__flex-item, .cronograma-item{
     display: flex;
@@ -240,6 +383,9 @@ section h4{
     
 }
 
+.egresados h4{
+    color: var(--base-color);
+}
 .cronograma-item p{
     margin: 10px;
 }
@@ -326,11 +472,7 @@ section h4{
     
 }
 
-.seccion p {
-    
-    line-height: 1.6;
-    font-size: larger;
-}
+
 
 .seccion-img{
     border-radius: 40px;
@@ -342,9 +484,11 @@ section h4{
 }
 
 
+/* Estilos de las secciones especificas fin*/
+
 /* Pie de página */
 footer {
-    background-color: var(--bg-color);
+    background-color: var(--base-color);
     bottom: 0;
     width: 100%;
     height: 60px;
