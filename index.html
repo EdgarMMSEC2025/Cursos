@@ -12,7 +12,7 @@
 
 <body>
     <!-- Encabezado del curso -->
-    <header>
+    <header class="header">
         <div class="header__container">
             <div class="header__container-item">
                 <p> Gestión de Proyectos Orientados a implementar el</p>
@@ -24,47 +24,45 @@
             <div class="header__container-item">
                 <img class="header-logo" src="./media/logo_transparente.png" alt="">
             </div>
-
-
-
         </div>
+
+        <nav class="menu">
+            <ul class="menu__container">
+                <li data-rel="1" class="menu__container-item active">
+                    ¿A quién va dirigido?
+                </li>
+                <li data-rel="2" class="menu__container-item">
+                    Sobre nosotros
+                </li>
+                <!--
+                <li data-rel="3" class="menu__container-item">
+                    Objetivos Específicos
+                </li>
+                -->
+                <li data-rel="3" class="menu__container-item">
+                    Cronograma
+                </li>
+                <li data-rel="4" class="menu__container-item">
+                    Competencias
+                </li>
+                <li data-rel="5" class="menu__container-item">
+                    Contenido del curso
+                </li>
+                <li data-rel="6" class="menu__container-item">
+                    Resultados
+                </li>
+            </ul>
+        </nav>
 
     </header>
 
     <!-- Menú de navegación -->
-    <nav class="menu">
-        <ul class="menu__container">
 
-            <li data-rel="1" class="menu__container-item active">
-                ¿A quién va dirigido?
-            </li>
-            <li data-rel="2" class="menu__container-item">
-                Sobre nosotros
-            </li>
-            <!--
-            <li data-rel="3" class="menu__container-item">
-                Objetivos Específicos
-            </li>
-            -->
-            <li data-rel="3" class="menu__container-item">
-                Cronograma
-            </li>
-            <li data-rel="4" class="menu__container-item">
-                Competencias
-            </li>
-            <li data-rel="5" class="menu__container-item">
-                Contenido del curso
-            </li>
-            <li data-rel="6" class="menu__container-item">
-                Resultados
-            </li>
-        </ul>
-    </nav>
     <div class="wrapper">
 
 
         <!-- Sección: ¿A quién va dirigido? -->
-        <section>
+        <section class="modalidad">
             <div class="seccion">
                 <h2>¿A quién va dirigido?</h2>
                 <p>
@@ -74,62 +72,62 @@
             </div>
 
             <div class="seccion">
-                
-                <h2>Modalidad</h2>   
+
+                <h2>Modalidad</h2>
 
                 <div class="container">
                     <div class="card">
-                      <div class="face face1">
-                        <div class="content">
-                          
+                        <div class="face face1">
+                            <div class="content">
+
+                            </div>
                         </div>
-                      </div>
-                      <div class="face face2">
-                        <h2>No escolarizada</h2>
-                      </div>
+                        <div class="face face2">
+                            <h2>No escolarizada</h2>
+                        </div>
                     </div>
                     <div class="card">
-                      <div class="face face1">
-                        <div class="content">
-                            <ul>
-                                <li>
-                                    <a>160 Horas de contenido</a>
-                                </li>
-                                <li>
-                                    <a>5 unidades de 70 sesiones</a>
-                                </li>
-                                <li>
-                                    <a>A través de la plataforma MOODLE</a>
-                                </li>
-                                <li>
-                                    <a>Tu administras tu tiempo para las actividades</a>
-                                </li>
-                            </ul>
+                        <div class="face face1">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a>160 Horas de contenido</a>
+                                    </li>
+                                    <li>
+                                        <a>5 unidades de 70 sesiones</a>
+                                    </li>
+                                    <li>
+                                        <a>A través de la plataforma MOODLE</a>
+                                    </li>
+                                    <li>
+                                        <a>Tu administras tu tiempo para las actividades</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
-                      <div class="face face2">
-                        <h2>En linea 24/7</h2>
-                      </div>
+                        <div class="face face2">
+                            <h2>En linea 24/7</h2>
+                        </div>
                     </div>
                     <div class="card">
-                      <div class="face face1">
-                        <div class="content">
-                            <ol class="seccion__list">
-                                <li class="seccion__list-item"><a>Carta de pasante</a></li>
-                                <li class="seccion__list-item"><a>Servicio social</a></li>
-                                <li class="seccion__list-item"><a>Certificado de calificaiones</a></li>
-                            </ol>
+                        <div class="face face1">
+                            <div class="content">
+                                <ol class="seccion__list">
+                                    <li class="seccion__list-item"><a>Carta de pasante</a></li>
+                                    <li class="seccion__list-item"><a>Servicio social</a></li>
+                                    <li class="seccion__list-item"><a>Certificado de calificaiones</a></li>
+                                </ol>
+                            </div>
                         </div>
-                      </div>
-                      <div class="face face2">
-                        <h2>Requisitos</h2>
-                      </div>
+                        <div class="face face2">
+                            <h2>Requisitos</h2>
+                        </div>
                     </div>
-                  </div>
+                </div>
 
-               
 
-                <p id="contenido_curso">
+
+                <p>
                     *Egresados de otras unidades académicas
                 </p>
                 <ol class="seccion__list">
@@ -139,6 +137,7 @@
                     <span>CUPO LIMITADO</span>
                 </p>
             </div>
+
             <div class="seccion contacto">
                 <h2>CONTACTO</h2>
                 <p><span>Ing. Nassyra M. Larragoiti Gutiérrez</span></p>
@@ -155,9 +154,12 @@
         </section>
 
         <!-- Sección: Objetivo General -->
-        <section>
-            <div class="seccion objetivos">
-                <img class="seccion-img" src="./media/1.jpg" alt="">
+        <section class="objetivo">
+            <div class="seccion">
+                <div class="seccion__flex">
+                    <img class="seccion__flex-item objetivo__img" src="./media/1.jpg" alt="">
+                </div>
+
                 <h2>Objetivo General</h2>
                 <p>
                     Desarrollar un proyecto enfocado en la Economía Circular dentro de una organización, industria,
@@ -179,8 +181,11 @@
 
                 </div>
             </div>
-            <div class="seccion objetivos">
-                <img class="seccion-img" src="./media/2.jpg" alt="">
+            <div class="seccion">
+                <div class="seccion__flex">
+                    <img class="seccion__flex-item objetivo__img" src="./media/2.jpg" alt="">
+                </div>
+
                 <h2>Objetivos Específicos</h2>
 
                 <ul>
@@ -223,8 +228,8 @@
         -->
 
         <!-- Secciones restantes -->
-        <section>
-            <div class="seccion cronograma proyectos">
+        <section class="cronograma">
+            <div class="seccion proyectos">
                 <h2>Cronograma</h2>
                 <div class="cronograma_container__tabla">
                     <h3 class="">Grupo 1</h3>
@@ -362,7 +367,7 @@
         </section>
 
         <section>
-            <div class="seccion proyectos">
+            <div class="seccion">
                 <h2>Competencias</h2>
 
                 <h3>Competencia general</h3>
@@ -395,8 +400,8 @@
             </div>
         </section>
 
-        <section>
-            <div class="seccion contenido proyectos">
+        <section class="contenido">
+            <div class="seccion">
                 <h2>Contenido del curso</h2>
                 <h3>UNIDAD 1: Gestión de Proyectos</h3>
                 <div class="contenido_container__ul">
@@ -703,7 +708,7 @@
 
 
 
-        <section>
+        <section class="resultados">
             <div class="seccion proyectos">
                 <h2>Proyectos</h2>
                 <h3>Primera generación</h3>
@@ -715,6 +720,7 @@
                     <p class="proyecto__p"> <span>Objetivo General:</span> Implementar un modelo de economía circular
                         mediante un programa
                         de compostaje de residuos de alimentos en la fábrica Volkswagen México.</p>
+                        <br>
                     <div class="proyecto__img">
                         <p><span><a href="https://correoipn-my.sharepoint.co/personal/emaldonadom_ipn_mx/_layouts/15/stream.aspx?id=%2Fpersonal%2Femaldonadom%5Fipn%5Fmx%2FDocuments%2FSEMINARIO%20ESIQIE%2F1ra%20Generaci%C3%B3n%2FPROYECTOS%2F5%2FImplementaci%C3%B3n%20De%20Modelo%20De%20Econom%C3%ADa%20Circular%20A%20Trav%C3%A9s%20Del%20Compostaje%20En%20Volkswagen%20M%C3%A9xico%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eeeb1a0b5%2D3500%2D4b08%2Dbd47%2D97a11fa67acd"
                                     target="_blank">Implementación De Modelo De Economía Circular A Través Del
@@ -942,5 +948,6 @@
     </footer>
 </body>
 <script src="./js/change.js"></script>
+<script src="js/menu.js"></script>
 
 </html>
