@@ -26,19 +26,35 @@
      --title-color: #0979b0;
      --dark-color: #0cb7f2;
      --complementar: #7cdaf9;
-     --bg: #b6ffff;
+     /*--bg: #b6ffff;*/
      --text-color: #ffff;
 
-     /*Colores del menu*/
+     /*Colores del menu*
      --uno: #608334;
      --dos: #97b770;
      --tres:#a8ca7e;
      --cuatro:#cbddb5;
      --cinco:#f7feef;
+     /**/
+
+     /*Otros colores del menu*/
+     --uno: #b80507;
+     --dos: #af0506;
+     --tres:#a20607;
+     --cuatro:#990607;
+     --cinco:#920506;
+     --seis: #880204;
+     --siete: #660103;
+     /**/
+
+     --prueba-1: #0B087A;
+     --prueba-2: #0A4025;
+
+     --bg: var(--prueba-1);
      margin: 0;
      padding: 0;
      color: #333;
-     background: url("../media/abstract-lines.png"), var(--bg) 100%;
+     background: /*url("../media/abstract-lines.png"),*/ var(--bg) 100%;
 
      background-size: auto;
  }
@@ -212,7 +228,7 @@
 
  /* Menú de navegación */
  .menu {
-     background-color: color-mix(in srgb, var(--complementar) 95%, #0af 5%);
+     background-color: var(--siete);
      position: sticky;
      top: 0;
      z-index: 1000;
@@ -234,7 +250,7 @@
      width: 210px;
      margin: 0 15px;
      font-weight: 600;
-     color: var(--base-color);
+     color: var(--text-color);
      border-radius: 5px;
      text-align: center;
      padding: 10px;
@@ -263,17 +279,17 @@
 
  .active:nth-of-type(4){
     background-color: var(--cuatro);
-    color: var(--base-color);
+    
  }
 
  .active:nth-of-type(5){
     background-color: var(--cinco);
-    color: var(--base-color);
+    
  }
 
  .active:nth-of-type(6){
-    background-color: var(--cinco);
-    color: var(--base-color);
+    background-color: var(--seis);
+    
  }
  
 
@@ -289,13 +305,15 @@
      display: none;
      container-type: inline-size;
      container-name: seccion;
+     color: var(--text-color);
  }
 
  .seccion {
      padding: 60px 20px;
      margin: 20px auto;
      max-width: 80dvw;
-     background-color: var(--complementar);
+     
+     background-color: var(--prueba-2);
      border-radius: 10px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -326,7 +344,7 @@
  .seccion h2 {
      text-align: center;
      padding-bottom: 25px;
-     color: var(--base-color);
+     color: var(--text-color);
      font-size: 3rem;
  }
 
@@ -341,7 +359,7 @@
 
  section h4 {
      font-size: 1.5rem;
-     color: var(--base-color);
+     color: var(--text-color);
      text-align: center;
      margin: 20px 0 20px 0;
      margin-bottom: 40px;
