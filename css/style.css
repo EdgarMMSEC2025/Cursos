@@ -26,7 +26,7 @@
      --title-color: #0979b0;
      --dark-color: #0cb7f2;
      --complementar: #7cdaf9;
-     /*--bg: #b6ffff;*/
+     --bg: #b6ffff;
      --text-color: #ffff;
 
      /*Colores del menu*
@@ -44,18 +44,19 @@
      --cuatro:#990607;
      --cinco:#920506;
      --seis: #880204;
-     --siete: #660103;
+     --siete: #99060c;
      /**/
 
      --prueba-1: #0B087A;
-     --prueba-2: #0A4025;
+     --prueba-2: #0C997B;
 
      --bg: var(--prueba-1);
      margin: 0;
      padding: 0;
      color: #333;
-     background: /*url("../media/abstract-lines.png"),*/ var(--bg) 100%;
-
+     background: url("../media/abstract-lines.png"),#97bac9 100%;
+     /*background-color: #97bac9;*/
+     /*background: linear-gradient(-175deg,#98b1bc,#97bac9);*/
      background-size: auto;
  }
 
@@ -228,7 +229,7 @@
 
  /* Menú de navegación */
  .menu {
-     background-color: var(--siete);
+     background: linear-gradient(175deg,#E60301,#A62C29,#b12b28,#E60301);
      position: sticky;
      top: 0;
      z-index: 1000;
@@ -260,35 +261,41 @@
 
  .active {
     /*.menu__container-item*/
-    background-color: var(--title-color);
+    
     font-weight: 800;
     color: #fff;
 }
 
  .active:nth-of-type(1){
     background-color: var(--uno);
+    outline: 1px solid #fff;
  }
 
  .active:nth-of-type(2){
     background-color: var(--dos);
+    outline: 1px solid #fff;
  }
 
  .active:nth-of-type(3){
     background-color: var(--tres);
+    outline: 1px solid #fff;
  }
 
  .active:nth-of-type(4){
     background-color: var(--cuatro);
+    outline: 1px solid #fff;
     
  }
 
  .active:nth-of-type(5){
     background-color: var(--cinco);
+    outline: 1px solid #fff;
     
  }
 
  .active:nth-of-type(6){
     background-color: var(--seis);
+    outline: 1px solid #fff;
     
  }
  
