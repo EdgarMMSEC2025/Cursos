@@ -861,6 +861,12 @@
     }
  }
 /*Querys cronograma*/
+
+.competencias ul{
+    margin: 0 0 0 3em;
+}
+
+
 .contenido{
     container: contenido/inline-size;
 }
