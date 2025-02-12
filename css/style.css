@@ -370,7 +370,7 @@
  .seccion h3 {
      text-align: center;
      color: var(--text-color);
-     font-size: 2.3rem;
+     font-size: 2.5rem;
      background-color: var(--title-color);
      margin: 25px;
 
@@ -714,7 +714,6 @@
  .general {
      background-attachment: fixed;
      font-weight: bold;
-     filter: drop-shadow();
      margin-top: 25px;
      border-radius: 40px;
 
@@ -880,7 +879,7 @@
  }
 
  .contenido li {
-        font-size: 1rem;
+    font-size: 1rem;
      font-weight: 600;
      margin-top: 10px;
      transition: color .5s linear;
@@ -929,6 +928,10 @@
     }
     .contenido li{
         font-size: .5rem;
+    }
+
+    .contenido h3{
+        font-size: 2em;
     }
 }
  /*querys contenido fin*/
