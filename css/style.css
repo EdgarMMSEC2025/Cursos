@@ -461,7 +461,7 @@
      .seccion h2 {
          text-align: center;
          padding-bottom: 25px;
-         color: var(--base-color);
+         color: var(--text-color);
          font-size: 3rem;
      }
 
@@ -871,9 +871,54 @@
     }
  }
 /*Querys cronograma*/
-
+.competencias{
+    container: competencias/inline-size;
+}
+.competencias img{
+    margin: 1em;
+    width: 50%;
+}
+.competencias__flex{
+    display: flex;
+    justify-content: space-around;
+}
 .competencias ul{
     margin: 0 0 0 3em;
+}
+.competencias li{
+    margin: 5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.competencias .accordion span{
+    font-size: 1.8rem;
+}
+.competencias .accordion span:hover{
+    cursor: pointer;
+}
+.competencias__h3{
+    cursor: pointer;
+}
+
+@container competencias (max-width:800px){
+    .competencias__flex{
+        flex-wrap: wrap;
+    }
+    .competencias .accordion span{
+        font-size: 1.2rem;
+    }
+    .competencias ul{
+        margin: .5rem 0 0 0;
+    }
+    .competencias li{
+        margin: 1em 0 0 0;
+        font-size: 1rem;
+    }
+
+    .competencias p{
+        margin: 2rem;
+        font-size: 1rem;
+    }
 }
 
 
