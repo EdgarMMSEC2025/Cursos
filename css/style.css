@@ -1091,6 +1091,47 @@
     }
 }
  /*querys contenido fin*/
+
+.inscripciones{
+
+}
+.costo p{
+    font-size: 3rem;
+}
+
+.opacidad{
+    opacity: .5;
+}
+.inscripcion{
+    gap: 20px;
+    justify-content: center;
+}
+
+.inscripcion__container{
+    background-color: var(--base-color);
+    border-radius: 30px;
+}
+.inscripciones_fechas{
+    text-align: center;
+    justify-content: center;
+}
+
+.inscripciones h4{
+    font-size: 1.6rem;
+    background-color: var(--complementar);
+    color: #000f00;
+}
+
+.inscripciones p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.inscripciones span{
+    font-weight: 700;
+}
+
+
 .resultados{
     container: resultados/inline-size;
 }
