@@ -707,6 +707,7 @@
     .card .face.face2 h2 {
         font-size: 1em;
     }
+    
 
     .content li {
         font-size: 1.4em;
@@ -722,6 +723,7 @@
     }
 
 }
+
 
 
 /* Queris Cartas de modalidad FIN */
@@ -1414,3 +1416,618 @@
      font-size: 0.9rem;
  }
 
+ /* ===== BANNER EXACTO  ===== */
+.inscripciones .banner-exacto {
+    max-width: 1200px;
+    width: 90vw;
+    min-height: 700px;
+    background: linear-gradient(135deg, #0d4d2e 0%, #1e7e34 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2% 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BANNER SUPERIOR */
+.banner-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    min-height: 120px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1%;
+}
+
+.logo-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 220px;
+    z-index: 2;
+}
+
+.logo-izquierdo {
+    align-items: flex-start;
+}
+
+.logo-derecho {
+    align-items: flex-end;
+}
+
+/* LOGOTIPOS SUPERIORES */
+.logo-izquierdo img,
+.logo-derecho img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3/1;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
+}
+
+.texto-logo {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 8px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    line-height: 1.2;
+    width: 100%;
+    padding: 0 5%;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido-banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin-top: -60px;
+}
+
+/* TÍTULOS */
+.titulo-banner {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    line-height: 1.1;
+    color: #ffffff;
+    padding: 0 10%;
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(135deg, #0d4d2e 0%, #1e7e34 100%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.subtitulo-banner {
+    text-align: center;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 30px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    padding: 0 8%;
+    position: relative;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* GRUPOS */
+.grupos-banner {
+    display: flex;
+    justify-content: center;
+    gap: clamp(15px, 3vw, 40px);
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.grupo {
+    background: rgba(255, 255, 255, 0.12);
+    padding: clamp(12px, 1.8vw, 20px);
+    border-radius: 12px;
+    border-left: 5px solid #ffcc00;
+    width: 45%;
+    min-width: 280px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-grupo {
+    color: #ffcc00;
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.fecha-grupo {
+    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+    margin: 0;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+}
+
+/* SEPARADOR */
+.separador {
+    height: 1px;
+    width: 75%;
+    max-width: 700px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+    margin: 2% auto 3%;
+    border: none;
+}
+
+/* INFORMACIÓN */
+.info-inscripciones {
+    text-align: center;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.titulo-info {
+    color: #ffcc00;
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-weight: 700;
+    margin-bottom: 1%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.texto-info {
+    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+    margin: 0.5% 0;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* CONTACTO */
+.contacto-banner {
+    text-align: center;
+    margin-bottom: 2.5%;
+    width: 100%;
+}
+
+.texto-contacto {
+    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+    margin: 0;
+    color: #ffcc00;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* IMÁGENES INFERIORES */
+.imagenes-inferiores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 2% 5% 1.5%;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
+/* IMAGEN IZQUIERDA - ECONOMÍA CIRCULAR */
+.imagen-izquierda {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.imagen-izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(1.2) contrast(1.15) drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+/* CONTENEDOR DERECHO - QR CON TEXTO DEBAJO */
+.contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5%;
+    gap: 15px;
+}
+
+/* RECUADRO BLANCO DEL QR */
+.qr-container {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* QR DENTRO DEL RECUADRO BLANCO */
+.img-codigo-qr {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+/* TEXTO DEBAJO DEL RECUADRO BLANCO */
+.texto-qr {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: none;
+}
+
+/* ELEMENTO DECORATIVO CIRCULAR */
+.inscripciones .banner-exacto::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    max-width: 400px;
+    height: 50%;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* MEDIA QUERIES INSCRIPCIONES */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .inscripciones .banner-exacto {
+        min-height: 650px;
+        padding: 2.5% 3.5%;
+    }
+    
+    .logo-superior {
+        min-width: 200px;
+    }
+    
+    .logo-izquierdo img,
+    .logo-derecho img {
+        max-width: 260px;
+    }
+    
+    .imagen-izquierda {
+        width: 160px;
+        height: 160px;
+        margin-left: 3%;
+    }
+    
+    .qr-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .img-codigo-qr {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .texto-qr {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tabletas y móviles grandes */
+@media (max-width: 768px) {
+    .inscripciones .banner-exacto {
+        min-height: auto;
+        padding: 4% 5%;
+    }
+    
+    .banner-superior {
+        flex-direction: row;
+        margin-bottom: 4%;
+        min-height: 100px;
+    }
+    
+    .logo-superior {
+        width: 35%;
+        min-width: 160px;
+    }
+    
+    .logo-izquierdo img,
+    .logo-derecho img {
+        max-width: 220px;
+    }
+    
+    .contenido-banner {
+        margin-top: -40px;
+    }
+    
+    .titulo-banner {
+        margin: 0 0 15px;
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
+    }
+    
+    .subtitulo-banner {
+        margin: 0 0 20px;
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+    }
+    
+    .grupos-banner {
+        margin-bottom: 5%;
+    }
+    
+    .grupo {
+        padding: 15px;
+    }
+    
+    .imagenes-inferiores {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 4% 0 3%;
+        min-height: auto;
+    }
+    
+    .imagen-izquierda {
+        order: 1;
+        margin-left: 0;
+        width: 180px;
+        height: 180px;
+    }
+    
+    .contenedor-derecho {
+        order: 2;
+        margin-right: 0;
+    }
+    
+    .qr-container {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .img-codigo-qr {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .texto-qr {
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    .inscripciones .banner-exacto {
+        padding: 5% 6%;
+    }
+    
+    .banner-superior {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 6%;
+        min-height: auto;
+    }
+    
+    .logo-superior {
+        width: 80%;
+        max-width: 280px;
+    }
+    
+    .logo-izquierdo,
+    .logo-derecho {
+        align-items: center;
+    }
+    
+    .logo-izquierdo img,
+    .logo-derecho img {
+        max-width: 240px;
+    }
+    
+    .contenido-banner {
+        margin-top: 0;
+    }
+    
+    .titulo-banner {
+        font-size: clamp(1.4rem, 5vw, 1.8rem);
+        margin: 0 0 15px;
+        padding: 12px 15px;
+    }
+    
+    .subtitulo-banner {
+        font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+        margin: 0 0 20px;
+        padding: 8px 12px;
+    }
+    
+    .grupos-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 6%;
+    }
+    
+    .grupo {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+    }
+    
+    .separador {
+        margin: 5% auto 6%;
+    }
+    
+    .imagenes-inferiores {
+        gap: 25px;
+        margin-top: 6%;
+        padding: 4% 0 3%;
+    }
+    
+    .imagen-izquierda,
+    .qr-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .img-codigo-qr {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .texto-qr {
+        font-size: 0.75rem;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 400px) {
+    .inscripciones .banner-exacto {
+        width: 95vw;
+        padding: 6% 4%;
+    }
+    
+    .imagen-izquierda,
+    .qr-container {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .img-codigo-qr {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .texto-qr {
+        font-size: 0.7rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1600px) {
+    .inscripciones .banner-exacto {
+        max-width: 1400px;
+        padding: 30px 50px;
+    }
+    
+    .titulo-banner {
+        font-size: 3.5rem;
+    }
+    
+    .subtitulo-banner {
+        font-size: 2rem;
+    }
+    
+    .logo-izquierdo img,
+    .logo-derecho img {
+        max-width: 320px;
+    }
+    
+    .imagen-izquierda {
+        width: 200px;
+        height: 200px;
+        margin-left: 8%;
+    }
+    
+    .qr-container {
+        width: 180px;
+        height: 180px;
+        margin-right: 8%;
+    }
+    
+    .img-codigo-qr {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .texto-qr {
+        font-size: 1rem;
+    }
+}
+
+/* PLACEHOLDERS MEJORADOS */
+.inscripciones .banner-exacto .logo-izquierdo img:not([src]),
+.inscripciones .banner-exacto .logo-derecho img:not([src]) {
+    background: linear-gradient(135deg, #f8f8f8, #e8e8e8);
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 30px;
+    min-height: 90px;
+}
+
+.inscripciones .banner-exacto .imagen-izquierda img:not([src]) {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    content: "ECONOMÍA CIRCULAR";
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.inscripciones .banner-exacto .img-codigo-qr:not([src]) {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    content: "QR CODE";
+}

@@ -41,3 +41,349 @@ li {
 h4{
   color: black;
 }
+/* ===== BANNER EXACTO - IMÁGENES CORREGIDAS ===== */
+.banner-exacto {
+    width: 1200px;
+    height: 700px;
+    background: linear-gradient(135deg, #0d4d2e 0%, #1e7e34 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px 40px;
+    box-sizing: border-box;
+}
+
+/* Logos superiores - TAMAÑO CONTROLADO */
+.banner-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+/* LOGOS PEQUEÑOS Y PROPORCIONALES */
+.logo-izquierdo img, 
+.logo-derecho img {
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.texto-logo {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+/* Contenido principal */
+.contenido-banner {
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Títulos */
+.titulo-banner {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 10px 0 15px 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitulo-banner {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 0 40px 0;
+    max-width: 900px;
+}
+
+/* Grupos */
+.grupos-banner {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.grupo {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px 30px;
+    border-radius: 12px;
+    border-left: 5px solid #ffcc00;
+    width: 300px;
+    text-align: center;
+}
+
+.titulo-grupo {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.fecha-grupo {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Separador */
+.separador {
+    height: 2px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px auto 30px;
+    border: none;
+}
+
+/* Información */
+.info-inscripciones {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.titulo-info {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.texto-info {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Contacto */
+.contacto-banner {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.texto-contacto {
+    font-size: 20px;
+    margin: 0;
+    color: #ffcc00;
+}
+
+/* IMÁGENES INFERIORES - TAMAÑOS FIJOS Y EXACTOS */
+.imagenes-inferiores {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 20px;
+    height: 170px;
+}
+
+/* Imagen izquierda - ECONOMÍA */
+.imagen-izquierda {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #000;
+}
+
+.imagen-izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Imagen derecha - QR */
+.imagen-derecha {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-derecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.texto-qr {
+    color: #0d4d2e;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Elemento decorativo */
+.banner-exacto::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px dashed rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* RESPONSIVE CON ESCALADO PROPORCIONAL */
+@media (max-width: 1250px) {
+    .banner-exacto {
+        transform: scale(0.85);
+        transform-origin: top center;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner-exacto {
+        transform: scale(0.75);
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .banner-exacto {
+        transform: scale(0.65);
+    }
+    
+    .grupos-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .grupo {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner-exacto {
+        transform: scale(0.55);
+    }
+    
+    .imagenes-inferiores {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        margin-top: 40px;
+    }
+    
+    .imagen-izquierda {
+        order: 2;
+    }
+    
+    .imagen-derecha {
+        order: 1;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-exacto {
+        transform: scale(0.45);
+    }
+    
+    .titulo-banner {
+        font-size: 42px;
+    }
+    
+    .subtitulo-banner {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-exacto {
+        transform: scale(0.4);
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-exacto {
+        transform: scale(0.35);
+    }
+}
+
+/* Placeholders específicos */
+.banner-exacto .logo-izquierdo img:not([src]),
+.banner-exacto .logo-derecho img:not([src]) {
+    background: #f0f0f0;
+    border: 2px dashed #999;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-exacto .imagen-izquierda img:not([src]) {
+    background: #1e7e34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner-exacto .imagen-derecha img:not([src]) {
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
